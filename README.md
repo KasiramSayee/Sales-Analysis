@@ -110,5 +110,5 @@ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 
 ## Technical Details
 - **Database:** PostgreSQL
-- **Analysis Tools:** PostgreSQL, Dbeaver
+- **Analysis Tools:** PostgreSQL, Dbeaver and PGadmin
 - **Visualization:** ChatGPT
