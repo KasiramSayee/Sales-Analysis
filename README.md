@@ -12,10 +12,10 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 
 **🖥️ Query**: [0_create_view.sql](0_create_view.sql)
 
-- Joined sales and customer table
-- Created aggregates for revenue metrics
-- Calculated first purchase dates for cohort analysis
-- Created view combining transactions and customer details
+      - Joined sales and customer table
+      - Created aggregates for revenue metrics
+      - Calculated first purchase dates for cohort analysis
+      - Created view combining transactions and customer details
 
 ## Analysis
 
@@ -23,18 +23,18 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 
 **🖥️ Query**: [1_customer_segmentation.sql](1_customer_segmentation.sql)
 
-- Categorized customers based on total lifetime value (LTV)
-- Assigned customers to High, Mid, and Low-value segments
-- Calculated key metrics like total revenue
+      - Categorized customers based on total lifetime value (LTV)
+      - Assigned customers to High, Mid, and Low-value segments
+      - Calculated key metrics like total revenue
 
 **📈 Visualization:**
 
-<img src="../Resources/images/6.3_customer_segementation.png" alt="Customer Segmentation" width="50%">
+<img src="/Images/customer_segementation.png" alt="Customer Segmentation" width="40%">
 
 📊 **Key Findings:**
 - High-value segment (25% of customers) drives 66% of revenue ($135.4M)
 - Mid-value segment (50% of customers) generates 32% of revenue ($66.6M)
-- Low-value segment (25% of customers) accounts for 2% of revenue ($4.3M)
+- Low-value segment (25% of customers) accounts for 2% of revenue ($4.3M)  
 
 💡 **Business Insights**
 - High-Value (66% revenue): Offer premium membership program to 12,372 VIP customers, as losing one customer significantly impacts revenue
@@ -44,21 +44,19 @@ Analysis of customer behavior, retention, and lifetime value for an e-commerce c
 ### 2. Customer Revenue by Cohort
 **🖥️ Query**: [2_cohort_analysis.sql](2_cohort_analysis.sql)
 
-- Tracked revenue and customer count per cohorts
-- Cohorts were grouped by year of first purchase
-- Analyzed customer revenue at a cohort level
+      - Tracked revenue and customer count per cohorts
+      - Cohorts were grouped by year of first purchase
+      - Analyzed customer revenue at a cohort level
 
 **📈 Visualization:**
 
-> ⚠️ Note: This only includes 2 charts. 
-
 Customer Revenue by Cohort (Adjusted for time in market) - First Purchase Date 
 
-<img src="../Resources/images/5.2_customer_revenue_normalized.png" alt="Customer Revenue Normalized" width="50%">
+<img src="/Images/customer_revenue_normalized.png" alt="Customer Revenue Normalized" width="50%">  
 
-Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
+Total Cohort Revenue & Customer Count
 
-<img src="../Resources/images/5.2_monthly_revenue_customers_3mo.png" alt="Monthly Revenue & CustomerTrends" width="50%">  
+<img src="/Images/cohort_totals.png" alt="Cohort Totals" width="50%">  
 
 📊 **Key Findings:**  
 - Customer revenue is declining, older cohorts (2016-2018) spent ~$2,800+, while 2024 cohort spending dropped to ~$1,970.  
@@ -73,13 +71,19 @@ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 ### 3. Customer Retention
 🖥️ Query: [3_retention_analysis.sql](3_retention_analysis.sql)
 
-- Identified customers at risk of churning
-- Analyzed last purchase patterns
-- Calculated customer-specific metrics
+      - Identified customers at risk of churning
+      - Analyzed last purchase patterns
+      - Calculated customer-specific metrics
 
 **📈 Visualization:**
 
-<img src="../Resources/images/7.3_customer_churn_cohort_year.png" alt="Customer Churn by Cohort Year" style="width: 50%; height: auto;">
+Percentage of Total Active & Churn Customers
+
+<img src="/Images/customer_churn.png" alt="Customer Churn Percentages" style="width: 40%; height: auto;">  
+
+Percentage of Active & Churn Customers in each Cohort
+
+<img src="/Images/customer_churn_cohort_year.png" alt="Customer Churn by Cohort Year" style="width: 50%; height: auto;">
 
 📊 **Key Findings:**  
 - Cohort churn stabilizes at ~90% after 2-3 years, indicating a predictable long-term retention pattern.  
@@ -91,6 +95,7 @@ Investigate Monthly Revenue & Customer Trends (3 Month Rolling Average)
 - Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating valuable users may yield higher ROI.  
 - Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
 
+  
 ## Strategic Recommendations
 
 1. **Customer Value Optimization** (Customer Segmentation)
